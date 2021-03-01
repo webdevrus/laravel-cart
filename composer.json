@@ -1,0 +1,56 @@
+{
+    "name": "webdevrus/laravel-cart",
+    "description": "Cart / Laravel E-Commerce",
+    "keywords": [
+        "laravel",
+        "laravel-cart",
+        "laravel-ecommerce",
+        "cart",
+        "laravel 7"
+    ],
+    "homepage": "https://github.com/webdevrus/laravel-cart",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WebDevRus",
+            "email": "web.developers.rus@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "illuminate/support": "^7.0",
+        "illuminate/database": "^7.0",
+        "webdevrus/laravel-uuid": "1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^8.0|^9.0"
+    },
+    "autoload": {
+        "files": [
+            "src/Helpers/helpers.php"
+        ],
+        "psr-4": {
+            "WebDevRus\\LaravelCart\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WebDevRus\\LaravelCart\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor\\bin\\phpunit --colors=always"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WebDevRus\\LaravelCart\\Providers\\CartServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
