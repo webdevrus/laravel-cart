@@ -6,7 +6,8 @@
         "laravel-cart",
         "laravel-ecommerce",
         "cart",
-        "laravel 7"
+        "laravel 7",
+        "laravel 8"
     ],
     "homepage": "https://github.com/webdevrus/laravel-cart",
     "license": "MIT",
@@ -17,14 +18,14 @@
         }
     ],
     "require": {
-        "php": "^7.2.5",
-        "illuminate/support": "^7.0",
-        "illuminate/database": "^7.0",
+        "php": "^7.3",
+        "illuminate/support": "^8.0",
+        "illuminate/database": "^8.0",
         "webdevrus/laravel-uuid": "1.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^5.0",
-        "phpunit/phpunit": "^8.0|^9.0"
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "files": [
